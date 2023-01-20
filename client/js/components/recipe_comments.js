@@ -125,3 +125,17 @@ function ifNoComments() {
         return ''
     }
 }
+
+function renderFeaturedRecipe(event) {
+    const recipeButton = event.target
+    const recipeDOM = recipeButton.closest('.feature-recipe')
+    const recipeDataId = recipeDOM.dataset.id
+
+    fetch(`https://api.spoonacular.com/recipes/${recipeDataId}/information?apiKey=67ea68afef674821b7bc0b706bca72d3`)
+        .then(response => response.json())
+        .then(renderComments(recipeDataId))
+        .then(renderRecipeLikes(recipeDataId))
+        .then(searchResult => {
+            renderRecipeDetail(searchResult)
+        })
+}

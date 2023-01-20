@@ -11,10 +11,16 @@ function renderAddLike(recipeId) {
         method: 'POST'
     })
         .then(res => res.json())
-        .then(state.likes += 1)
+        .then(ifLoggedIn())
         .then(
             document.querySelector('.like-counter').textContent = state.likes
         )
         // .then(state.likes += 1)
 
+}
+
+function ifLoggedIn() {
+    if (state.loggedInUserName != null) {
+        state.likes += 1
+    }
 }

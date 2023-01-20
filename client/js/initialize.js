@@ -1,7 +1,8 @@
 const state = {
     // populate with other key value pairs
     reviews: [],
-    loggedInUserName: null
+    loggedInUserName: null,
+    likes: 0
 }
 
 // PLACEHOLDER CODE
@@ -28,7 +29,7 @@ fetch(`https://api.spoonacular.com/recipes/random?apiKey=67ea68afef674821b7bc0b7
     Chews Another Recipe</button>
     </section>
     <div class="break"> </div>
-    <section onclick='renderSingleRecipe(event)' class='feature-recipe' data-id='${food.id}'>
+    <section onclick='renderFeaturedRecipe(event)' class='feature-recipe' data-id='${food.id}'>
     <img src='${food.image}' alt=''>
     <div class="heading">
       <h2>${food.title}</h2>
