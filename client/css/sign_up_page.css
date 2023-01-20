@@ -11,6 +11,13 @@ section .sign-up {
 
 .signup-center {
     text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.signup-center label {
+    display: block;
+    text-align: left;
 }
 
 .sign-up form {
