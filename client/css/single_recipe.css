@@ -1,57 +1,109 @@
 .recipe-info {
-    background-color: white;
-    padding: 1rem;
-    max-width: 1200px;
+  background-color: white;
+  padding: 1rem;
+  max-width: 1200px;
 }
 
 .comment-btn {
-    text-decoration: none;
-    background-color: rgb(249, 187, 54);
-    border-radius: 15px;
-    padding: 10px;
-    width: fit-content;
-    margin-bottom: 20px;
+  text-decoration: none;
+  background-color: rgb(249, 187, 54);
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
 }
 
 .new-comment,
 .existing-comments {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .review {
-    padding: 5px;
-    border-bottom: 1px solid lightgrey;
-    margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 10px;
 
 }
 
 .user-details {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 .username-comment {
-    color: rgb(28, 49, 68);
+  color: rgb(28, 49, 68);
 }
 
 .comment-controls a,
 .comment-controls button {
-    border: none;
-    border-radius: 15px;
-    width: 55px;
-    padding: 0.25rem 0.5rem;
-    background-color: rgb(245, 228, 192);
-    color: rgb(249, 187, 54);
-    font-size: 0.8em;
-    text-decoration: none;
-    cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  width: 55px;
+  padding: 0.25rem 0.5rem;
+  background-color: rgb(245, 228, 192);
+  color: rgb(249, 187, 54);
+  font-size: 0.8em;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.comment-area {
-    text-align: left;
-}
 
 .comment-area label {
-    display: block;
+  display: block;
+}
+
+.comment-area button {
+  background-color: black;
+  opacity: 1;
+  padding: 0.5rem;
+  border: 0px;
+  color: white;
+}
+
+.comment-area button:hover {
+  background-color: rgb(249, 187, 54);
+}
+
+.comment-sctn {
+  background-color: white;
+  text-align: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
+.comment-sctn h3 {
+  padding: 1rem;
+
+}
+
+.comment-sctn p {
+  padding: 1rem;
+
+}
+
+.comment-btn {
+  padding: 1rem;
+
+}
+
+.comment-area input {
+  background-color: rgb(225, 225, 225);
+  opacity: 0.5;
+  border: 0pt;
+}
+
+.comment-area #ratings {
+  background-color: rgb(225, 225, 225);
+  opacity: 0.5;
+  border: 0pt;
+
+}
+
+textarea[name="comment"] {
+  background-color: rgb(225, 225, 225);
+  opacity: 0.5;
+  border: 0pt;
+
 }
